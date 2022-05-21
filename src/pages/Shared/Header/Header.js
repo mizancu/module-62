@@ -8,10 +8,11 @@ import {signOut} from 'firebase/auth';
 
 const Header = () => {
   const [user] = useAuthState(auth);
-  // const navigate =useNavigate();
+  const navigate =useNavigate();
 
   const handleSignOut = () =>{
     signOut(auth);
+    navigate('/login');
   }
   return (
     <>
