@@ -7,6 +7,7 @@ import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -74,6 +75,7 @@ const Login = () => {
             <p>Forget password? <button className='btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset password</button></p>
             <SocialLogin></SocialLogin>
             <ToastContainer></ToastContainer>
+            <PageTitle title="Login"></PageTitle>
         </div>
     );
 };
